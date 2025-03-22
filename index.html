@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baruch AbroadBot | GEN AI </title>
+    <!-- Linking google font for Icons -->
+     <!-- Outlined icons -->
+      <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <!-- Rounded icons -->
+       <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded" rel="stylesheet" />
+
+       <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="container"> 
+    <header class="app-header">
+        <!-- Header Greetings -->
+        <h1 class="heading">Hello! I am Baruch Abroad AI </h1>
+        <h2 class="sub-heading"> Planning on Studying Abroad? </h2>
+    </header>
+    <!-- Suggestion Greetings -->
+    <ul class="suggestions">
+        <li class="suggestions-item">
+            <p class="text"> Explore Study Abroad Programs at Baruch </p>
+            <span class="icon material-symbols-outlined">school</span>
+        </li>
+        <li class="suggestions-item">
+            <p class="text">  Scholarships & Financial Aid for Studying Abroad </p>
+            <span class="icon material-symbols-outlined">attach_money</span>
+        </li>
+        <li class="suggestions-item">
+            <p class="text"> How to Apply (Step-by-Step Guide) </p>
+            <span class="icon material-symbols-outlined">draw</span>
+        </li>
+        <li class="suggestions-item">
+            <p class="text"> Talk to a Study Abroad Advisor </p>
+            <span class="icon material-symbols-outlined">tooltip</span>
+        </li>
+    </ul>
+
+    <!-- Chats Container -->
+     <div class="chats-container">
+
+     </div>
+    <!-- Prompt Container-->
+     <div class="prompt-container">
+        <div class="prompt-wrapper">
+            <form action = "#" class="prompt-form">
+                <input type="text" placeholder="Ask Abroad Bot!" class="prompt-input" required>
+                <div class="prompt-actions">
+                    <!-- FILE UPLOAD WRAPPER -->
+                    <div class="file-upload-wrapper active">
+                        <img src="logo.svg" class="file-preview">
+                        <button id="add-file-btn" type="button" 
+                        class="icon material-symbols-rounded">attach_file</button>
+                        <button id="cancel-file-btn" type="button" 
+                        class="icon material-symbols-rounded">close</button>
+                    </div>
+                    <button id="send-prompt-btn" type="submit" 
+                    class="icon material-symbols-rounded">arrow_upward</button>
+                </div>
+            </form>
+            
+            <button id="theme-toggle-btn" type="button" 
+            class="icon material-symbols-rounded">light_mode</button>
+            <button id="delete-chats-btn" type="button" 
+            class="icon material-symbols-rounded">delete</button>
+        </div>
+        <p class="disclaimer-text">
+            ⚠️ AbroadBot is still in development. Please double-check all information—especially details about programs, deadlines, and people—with official Baruch Study Abroad resources.
+        </p>
+     </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
